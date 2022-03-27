@@ -15,4 +15,3 @@ public class Control {
 		this.tv=tv;
 	}
 }
-
