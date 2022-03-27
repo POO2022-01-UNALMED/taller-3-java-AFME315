@@ -14,6 +14,11 @@ public class Control {
 	public void setTv(TV tv) {
 		this.tv=tv;
 	}
+	public void setCanal(int canal) {
+		if(tv.estado==true && (tv.canal>=1 && tv.canal<=120)) {
+			tv.canal=canal;
+		}
+	}
 	public void turnOn() {
 		tv.estado=true;
 	}
@@ -40,3 +45,4 @@ public class Control {
 			tv.setVolumen(tv.volumen-1);
 		}
 	}
+}
