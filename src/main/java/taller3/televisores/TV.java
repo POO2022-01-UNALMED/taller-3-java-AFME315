@@ -49,12 +49,12 @@ public class TV {
 		this.precio=precio;
 	}
 	public void setVolumen(int volumen) {
-		if (this.getEstado() && (volumen>=0 && volumen<=7)) {
+		if (this.estado && (volumen>=0 && volumen<=7)) {
 			this.volumen=volumen;
 		}
 	}
 	public void setCanal(int canal) {
-		if (this.getEstado() && (canal>=1 && canal>=120)) {
+		if (this.estado && (canal>=1 && canal>=120)) {
 			this.canal=canal;
 		}
 	}
